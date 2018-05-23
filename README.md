@@ -7,8 +7,7 @@ Currently, the most frequently used approach to address the visual attribution p
 The approach that I am using here, called [Deep Convolutional Generative Adversarial Networks](https://arxiv.org/pdf/1511.06434.pdf) attempts to segment images by training [Generative Adversarial Networks (GANs)](https://arxiv.org/pdf/1406.2661) and later reusing parts of the generator and discriminator networks as feature extractors for supervised tasks. The learning process and lack of heuristic cost function in GANs make them attractive for representation learning.
 
 ### Introduction
-Manual segmentation of lesions/tumors from Magnetic Resonances Images (MRIs) is a time-sink for medical professionals whose time can be better put to use in non-repetitive tasks. Further, it is tedious and cumbersome for a large number of images. Judging by the repetitive nature of the task with no special challenges encountered with every new image, it would appear that such an activity could be automated; but the intricacies involved in the task make it extremely difficult to codify a certain set of rules by which to do so. However,
-in the last few years, deep learning has provided many a solution that was previously beyond our reach.
+Manual segmentation of lesions/tumors from Magnetic Resonances Images (MRIs) is a time-sink for medical professionals whose time can be better put to use in non-repetitive tasks. Further, it is tedious and cumbersome for a large number of images. Judging by the repetitive nature of the task with no special challenges encountered with every new image, it would appear that such an activity could be automated; but the intricacies involved in the task make it extremely difficult to codify a certain set of rules by which to do so. However, in the last few years, deep learning has provided many a solution that was previously beyond our reach.
 Here, I use [DCGANs](https://arxiv.org/abs/1511.06434.pdf) for segmentation of medical images.
 
 ### Model Architecture
@@ -30,7 +29,7 @@ into simple numerical data, such as a classification, we perform deconvolutions 
 input. First, we take our input, called Z which is the Flair data, and feed it into our first deconvolutional layer. Each deconvolutional layer performs a deconvolution and then performs batch normalization and a leaky ReLu as well. Then, we return the tanh activation function.
 
 ### Experiment
-The objective being medical image segmentation, we have used the BRATS-2 dataset for our project. The dataset comprises of clinically-acquired 3T multimodal MRI scans and all the ground truth labels have been manually-revised by expert board-certified
+The objective being medical image segmentation, I have used the BRATS-2 dataset for our project. The dataset comprises of clinically-acquired 3T multimodal MRI scans and all the ground truth labels have been manually-revised by expert board-certified
 neuroradiologists.
 
 For the purposes of training the GAN, we use all the training images from HG and LG resized from 256 X 256 to 28 X 28 by cropping and resizing the area needed for segmentation.
