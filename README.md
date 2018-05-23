@@ -32,5 +32,5 @@ input. First, we take our input, called Z which is the Flair data, and feed it i
 The objective being medical image segmentation, I have used the BRATS-2 dataset for our project. The dataset comprises of clinically-acquired 3T multimodal MRI scans and all the ground truth labels have been manually-revised by expert board-certified
 neuroradiologists.
 
-For the purposes of training the GAN, we use all the training images from HG and LG resized from 256 X 256 to 28 X 28 by cropping and resizing the area needed for segmentation.
+For the purposes of training the GAN, we use all the training images from HG and LG resized from 256 x 256 to 28 x 28 by cropping and resizing the area needed for segmentation.
 
