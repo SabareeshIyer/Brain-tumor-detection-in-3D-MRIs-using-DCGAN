@@ -1,5 +1,5 @@
 # DCGAN-for-Brain-Tumor-segmentation
-## Using DCGAN for segmenting brain tumors from brain image scans
+## Implementing DCGAN in Tensorflow to perform tumor segmentation in brain image scans
 
 Semantic segmentation constitutes an integral part of medical image analysis for which breakthroughs in the field of deep learning were of high relevance. Attributing the pixels of an input image to a certain category is an important and well-studied problem in computer vision.
 Currently, the most frequently used approach to address the visual attribution problem is training a neural network classifier to predict the categories of a set of images and then following one of two strategies: analysing the gradients of the prediction with respect to an input image or analysing the activations of the feature maps for the image to determine which part of the image was responsible for making the associated prediction. 
