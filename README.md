@@ -29,7 +29,7 @@ into simple numerical data, such as a classification, we perform deconvolutions 
 input. First, we take our input, called Z which is the Flair data, and feed it into our first deconvolutional layer. Each deconvolutional layer performs a deconvolution and then performs batch normalization and a leaky ReLu as well. Then, we return the tanh activation function.
 
 ### Experiment
-The objective being medical image segmentation, I have used the BRATS-2 dataset for our project. The dataset comprises of clinically-acquired 3T multimodal MRI scans and all the ground truth labels have been manually-revised by expert board-certified
+The objective being medical image segmentation, I have used the BRATS-2 dataset for the project. The dataset comprises of clinically-acquired 3T multimodal MRI scans and all the ground truth labels have been manually-revised by expert board-certified
 neuroradiologists.
 
 For the purposes of training the GAN, we use all the training images from HG and LG resized from 256 x 256 to 28 x 28 by cropping and resizing the area needed for segmentation.
